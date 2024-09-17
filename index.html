@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Fetcher</title>
+    <link rel="stylesheet" href="pokemonapi.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="
+        font-family: 'Pokemon', sans-serif; 
+        font-weight: bold; 
+        font-size: 48px; 
+        color: #FFCB05; /* Pokémon yellow */
+        text-shadow: 
+            -1.5px -1.5px 0 #3B4CCA,  /* blue outline (reduced) */
+            1.5px -1.5px 0 #3B4CCA,
+            -1.5px 1.5px 0 #3B4CCA,
+            1.5px 1.5px 0 #3B4CCA,
+            -2.5px -2.5px 0 #3B4CCA,  /* additional layers for thicker shadow */
+            2.5px -2.5px 0 #3B4CCA,
+            -2.5px 2.5px 0 #3B4CCA,
+            2.5px 2.5px 0 #3B4CCA;
+        letter-spacing: 2px; 
+        padding: 10px;
+        text-transform: uppercase;
+    ">
+    Pokémon Fetcher
+        </h1>
+        <div class="input-container">
+            <textarea id="pokemonNames" placeholder="Enter Pokémon Names, separated by commas"></textarea>
+            <div class="button-container">
+                <button onclick="fetchMultiplePokemon()">Fetch Pokémon</button>
+                <button onclick="resetPokemon()">Return to Pokéball</button>
+            </div>
+        </div>
+        <div id="pokemonContainer"></div>
+    </div>
+    <script src="pokemonapi.js"></script>
+</body>
+</html>
